@@ -17,11 +17,11 @@
             <div class="left">Anirudh's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
             <div class="right"></div>
@@ -46,7 +46,7 @@
         <div class="container">
             <div class="row">
             <div class="about-col-1">
-                <img src="user.png">
+                <img src="Screenshot_20240228_103805_Samsung Notes-Photoroom.png-Photoroom.png">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -60,9 +60,9 @@
                 </div>
                 <div class="tab-contents active-tab" id="sills">
                     <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Web app Development</li>
-                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        <li><span>Java</span><br>App Development</li>
+                        <li><span>Html and CSS</span><br>Web Development</li>
+                        <li><span>Athlete</span><br>Cricketer</li>
 
                         
                     </ul>
@@ -97,19 +97,19 @@
         <div class="services-list">
         <div>
             <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
+            <h2>Java</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore aut libero sunt qui impedit pariatur dolorem cumque </p>
             <a href="#">Learn more</a>
         </div>
         <div>
             <i class="fa-solid fa-crop"></i>
-            <h2>UI/UX Design</h2>
+            <h2>HTML</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore aut libero sunt qui impedit pariatur dolorem cumque </p>
             <a href="#">Learn more</a>
         </div>
         <div>
             <i class="fa-brands fa-app-store"></i>
-            <h2>App Design</h2>
+            <h2>CSS</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore aut libero sunt qui impedit pariatur dolorem cumque </p>
             <a href="#">Learn more</a>
             </div>
@@ -120,22 +120,71 @@
 <!--             Portfolio         -->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">My Achievements</h1>
         <div class="work-list">
             <div class="work">
                 <img src="Anirudh 2nd Position in Cricket.jpeg ">
+                <div class="layer">
+                    <h3>JUIT Solan</h3>
+                    <p>Silver Medalist in the Parakram Tournament in the game of Cricket</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
                     
                 </div>
                 <div class="work">
                     <img src="IMG_0168-2.JPG">
+                    <div class="layer">
+                        <h3>Thapar University</h3>
+                        <p>Gold Medalist in the Urja Tournament in the game of Cricket</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
                     </div>
                 <div class="work">
-                    <img src="IMG_1241.JPG">
+                    <img src="IMG_2411.jpg">
+                    <div class="layer">
+                        <h3>IIT Ropar</h3>
+                        <p>Gold Medalist in the Aarohan Tournament in the game of Cricket</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
 
         </div>
+        <a href="#" class="btn">See more</a>
     </div>
 </div>
+ <!-- <---------- contact----------> 
+
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>8123423444</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/anirudh-jindal-8562a4289/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1c3NFhzbLWiRMSber-LGUw-aJ4PMqApFB/view?usp=sharing"  download class="btn btn2">Download CV</a>
+            </div>
+            
+           
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Anirudh Jindal. Made with <i class="fas fa-heart"></i>by Easy Tutorials</p>
+    </div>
+ </div>
 
 
        
@@ -161,9 +210,29 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: [' Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor'],
+          strings: [' Developer', 'Cricketer', 'Athlete', ],
           typeSpeed: 50,
         });
       </script>
+
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbyqdm-0KeaONNyV9NV0cg9By7-UCwTQy1tnn54R0c1bieUYSN-mJWjkK7I--necHXf7/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+        },5000) 
+            form.reset()   
+            })
+            
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
